@@ -1,0 +1,71 @@
+[2021-04-13 18:07:12,544] [INFO] Connecting to GitLab
+[2021-04-13 18:08:01,229] [INFO] Connecting to GitLab
+[2021-04-13 18:08:01,344] [INFO] Done.
+[2021-04-13 18:08:01,345] [INFO] Connecting to LDAP
+[2021-04-13 18:08:01,384] [INFO] Done.
+[2021-04-13 18:08:01,384] [INFO] Getting all groups from LDAP.
+[2021-04-13 18:08:02,643] [INFO] Done.
+[2021-04-13 18:08:02,644] [INFO] |- Working on group's members.
+[2021-04-13 18:10:13,913] [INFO] Connecting to GitLab
+[2021-04-13 18:10:14,062] [INFO] Done.
+[2021-04-13 18:10:14,062] [INFO] Connecting to LDAP
+[2021-04-13 18:10:14,102] [INFO] Done.
+[2021-04-13 18:10:14,102] [INFO] Getting all groups from LDAP.
+[2021-04-13 18:10:15,363] [INFO] Done.
+[2021-04-13 18:10:15,363] [INFO] |- Working on group's members.
+[2021-04-13 18:10:26,443] [INFO] Connecting to GitLab
+[2021-04-13 18:10:26,563] [INFO] Done.
+[2021-04-13 18:10:26,563] [INFO] Connecting to LDAP
+[2021-04-13 18:10:26,604] [INFO] Done.
+[2021-04-13 18:10:26,604] [INFO] Getting all groups from LDAP.
+[2021-04-13 18:10:27,869] [INFO] Done.
+[2021-04-13 18:10:27,870] [INFO] |- Working on group's members.
+[2021-04-13 18:11:29,375] [INFO] Connecting to GitLab
+[2021-04-13 18:11:29,482] [INFO] Done.
+[2021-04-13 18:11:29,483] [INFO] Connecting to LDAP
+[2021-04-13 18:11:29,522] [INFO] Done.
+[2021-04-13 18:11:29,522] [INFO] Getting all groups from LDAP.
+[2021-04-13 18:11:30,779] [INFO] Done.
+[2021-04-13 18:11:30,779] [INFO] |- Working on group's members.
+[2021-04-13 18:12:08,806] [INFO] Connecting to GitLab
+[2021-04-13 18:12:08,922] [INFO] Done.
+[2021-04-13 18:12:08,922] [INFO] Connecting to LDAP
+[2021-04-13 18:12:08,962] [INFO] Done.
+[2021-04-13 18:12:08,962] [INFO] Getting all groups from LDAP.
+[2021-04-13 18:12:10,233] [INFO] Done.
+[2021-04-13 18:12:10,233] [INFO] |- Working on group's members.
+[2021-04-13 18:12:25,049] [INFO] Connecting to GitLab
+[2021-04-13 18:12:25,152] [INFO] Done.
+[2021-04-13 18:12:25,153] [INFO] Connecting to LDAP
+[2021-04-13 18:12:25,191] [INFO] Done.
+[2021-04-13 18:12:25,191] [INFO] Getting all groups from LDAP.
+[2021-04-13 18:12:26,452] [INFO] Done.
+[2021-04-13 18:12:26,452] [INFO] |- Working on group's members.
+[2021-04-13 18:13:43,238] [INFO] Connecting to GitLab
+[2021-04-13 18:13:43,344] [INFO] Done.
+[2021-04-13 18:13:43,344] [INFO] Connecting to LDAP
+[2021-04-13 18:13:43,386] [INFO] Done.
+[2021-04-13 18:13:43,386] [INFO] Getting all groups from LDAP.
+[2021-04-13 18:13:44,639] [INFO] Done.
+[2021-04-13 18:13:44,639] [INFO] |- Working on group's members.
+[2021-04-13 18:15:26,930] [INFO] Connecting to GitLab
+[2021-04-13 18:15:27,034] [INFO] Done.
+[2021-04-13 18:15:27,035] [INFO] Connecting to LDAP
+[2021-04-13 18:15:27,075] [INFO] Done.
+[2021-04-13 18:15:27,075] [INFO] Getting all groups from LDAP.
+[2021-04-13 18:15:28,334] [INFO] Done.
+[2021-04-13 18:15:28,334] [INFO] |- Working on group's members.
+[2021-04-13 18:18:11,500] [INFO] Connecting to GitLab
+[2021-04-13 18:18:11,607] [INFO] Done.
+[2021-04-13 18:18:11,608] [INFO] Connecting to LDAP
+[2021-04-13 18:18:11,652] [INFO] Done.
+[2021-04-13 18:18:11,652] [INFO] Getting all groups from LDAP.
+[2021-04-13 18:18:13,133] [INFO] Done.
+[2021-04-13 18:18:13,133] [INFO] |- Working on group's members.
+[2021-04-13 18:19:28,152] [INFO] Connecting to GitLab
+[2021-04-13 18:19:28,262] [INFO] Done.
+[2021-04-13 18:19:28,263] [INFO] Connecting to LDAP
+[2021-04-13 18:19:28,304] [INFO] Done.
+[2021-04-13 18:19:28,304] [INFO] Getting all groups from LDAP.
+[2021-04-13 18:19:29,559] [INFO] Done.
+[2021-04-13 18:19:29,559] [INFO] |- Working on group's members.

@@ -8,6 +8,9 @@ import ldap
 import ldap.asyncsearch
 import logging
 
+import pandas as pd
+import numpy as np
+
 if __name__ == "__main__":
     print('Initializing gitlab-ldap-sync.')
     config = None
@@ -99,46 +102,14 @@ if __name__ == "__main__":
             logging.info('Done.')
 
             logging.info('|- Working on group\'s members.')
-            p = gl.projects.get(config['gitlab']['projectid'])
+            mapping = []
             for l_member in memberlist:
                 u = gl.users.list(search=l_member['email'])
                 if len(u) > 0:
                     u = u[0]
-                    logging.info("{} already exists in gitlab".format(l_member['email']))
-                    if u.id not in [m.id for m in p.members.list(all=True)]:
-                        logging.info("Adding {} to the project".format(l_member['email']))
-                        p.members.create({'user_id': u.id, 'access_level': gitlab.DEVELOPER_ACCESS})
-                        p.save()
-                else:
-                    if config['gitlab']['create_user']:
-                        logging.info('|  |- User %s does not exist in gitlab, creating.' % l_member['name'])
-                        try:
-                            u = gl.users.create({
-                            'email': l_member['email'],
-                            'name': l_member['name'],
-                            'username': l_member['username'],
-                            'extern_uid': l_member['identities'],
-                            'provider': config['gitlab']['ldap_provider'],
-                            'password': 'Asam2020',
-                            'reset_password': True
-                            })
-                        except gitlab.exceptions.GitlabCreateError as e:
-                            logging.warning("Something strange happened with {}. Double check they were created properly...".format(l_member['email']))
-                            u = gl.users.create({
-                                'email': l_member['email'],
-                                'name': l_member['name'],
-                                'username': l_member['name'].replace(" ","."),
-                                'extern_uid': l_member['identities'],
-                                'provider': config['gitlab']['ldap_provider'],
-                                'password': 'Asam2020',
-                                'reset_password': True
-                            })
-                        p.members.create({'user_id': u.id, 'access_level': gitlab.DEVELOPER_ACCESS})
-                        p.save()
-                    else:
-                        logging.info('|  |- User %s does not exist in gitlab, skipping.' % l_member['name'])
-            logging.info('Done.')
-
-            logging.info('Done.')
-
-
+                    mapping.append([l_member['email'],u.username])
+        df = pd.DataFrame(mapping)
+        s = df.to_csv(index=False)
+        s = s.replace(",", ": ").replace("\n\n", "\n")
+        with open("user_mappings.yml", "w") as f:
+            f.writelines(s)
